@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+/* Custom ScrollBar */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(69, 69, 69, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(85, 85, 85, 0.3);
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  scroll-snap-type: y mandatory;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: "Abril Fatface", "Arial", sans-serif;
+}
+html section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.bg-icon {
+  color: #fff;
+  outline: 3px solid #000;
+  background-color: #A100FF;
+  border-radius: 50%;
+  padding: 1.5rem;
+}
+
+.icon {
+  font-size: 6rem;
+}
+
+.social-icon {
+  width: 96px;
+}
+
+.photo-container {
+  padding: 4rem;
+}
+
+.cadre {
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+.cadre h1 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.img-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  width: 100%;
+  height: 100%;
+}
+
+.img-container * {
+  background-size: unset;
+}
+
+.photo-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  width: 100%;
+  height: 50%;
+}
+
+.fond-violet {
+  background-color: #a100ff;
+  
+}
+
+
+.fond-jaune {
+  background-color: #f3ff82;
+}
+
+.fond-portfoglio {
+  background-image: url("./images/fond-mauve-portfoglio.png");
+  background-repeat: repeat-y;
+  background-size: 150%;
+  background-position: center;
+}
+
+.cadre-portfoglio {
+  background-image: url("./images/cadre-portfoglio.png");
+}
+
+.fenetre-violet {
+  background-image: url("./images/fenetre-violet.png");
+}
+
+.fenetre-jaune {
+  background-image: url("./images/fenetre-jaune.png");
+}
+
+.cadre-image-violet {
+  background-image: url("./images/cadre-image-violet.png");
+}
+
+.cadre-image-jaune {
+  background-image: url("./images/cadre-image-jaune.png");
+
+}
+
+.cadre-contact {
+  background-image: url("./images/cadre-contact.png");
+}
+
+nav {
+  width: 50%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+
+}
+#reseau { 
+  -webkit-transform: scale(1);
+  transform: scale(1);   
+  -webkit-transition: 0.3s ease-in-out;   
+  transition: 0.3s ease-in-out;
+} 
+  #reseau:hover {   -webkit-transform: scale(1.3);  
+     transform: scale(1.3); }
+
+
+h3{
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: initial;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contact {
+  background-image: url(Contacter.png);
+  color: #e100ff;
+  background-size: 1450px 725px;
+}
+
+h4 {
+  margin-left: 1em;
+  font-size: 4em;
+  margin-top: 0;
+}
+
+h4 {
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 1em;
+    width: 100%;
+  }
+}
+
+main {
+  margin-left: 3em;
+  color: white;
+  font-size: 1.5em;
+}
+
+textarea {
+  margin-top: 1em;
+  border-block-color: #ffc857;
+  border-width: 5px;
+  background-color: #323031;
+  width: 800px;
+  color: white;
+  font-size: 15px;
+}
+
+#mail {
+  margin-top: 1em;
+  border-block-color: #ffc857;
+  border-width: 5px;
+  background-color: #323031;
+  width: 800px;
+  color: white;
+  font-size: 15px;
+}
+
+#msg {
+  height: 300px;
+}
+
+#button {
+  background-color: #ffc857;
+  color: #323031;
+  height: 30px;
+  width: 815px;
+}
+
+#button:active {
+  background-color: #ffc857;
+  color: white;
+}
+
+img {
+  width: 180px;
+  height: 180px;
+  padding: 30px;
+}
+
+.container {
+  width: 200px;
+  margin-left: 66em;
+  margin-top: -1.5em;
+  position: absolute;
+}
+
+#img_insta {
+  margin-top: 14em;
+  position: absolute;
+}
+
+#img_fb {
+  margin-top: 27.7em;
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  margin-left: 12em;
+}
+
+.return {
+  color: rgb(0, 0, 0);
+  font-size: 1.2em;
+  margin-left: 0;
+  margin-top: 0.5em;
+  position: absolute;
+}
+
